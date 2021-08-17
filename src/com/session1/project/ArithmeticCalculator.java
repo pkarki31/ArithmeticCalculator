@@ -13,7 +13,7 @@ public class ArithmeticCalculator {
     Scanner sc = new Scanner(System.in);
 
 
-    public  void calculate(int num1,int num2,String ops){
+    public static  void calculate(int num1,int num2,String ops){
 
         if(ops.equalsIgnoreCase("Addition")){
 
@@ -93,9 +93,7 @@ public class ArithmeticCalculator {
 
             number2 = sc.nextInt();
 
-            ArithmeticCalculator am = new ArithmeticCalculator();
-
-            am.calculate(number1,number2,operation);
+            calculate(number1,number2,operation);
 
         }
 
